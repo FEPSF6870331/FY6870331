@@ -186,24 +186,24 @@
           <head>
 
           <title>My Daily Activities</title>
-          <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             
             </head>
           
-          <div id="chart_div"></div> 
-          <script type="text/javascript">
+          <div id="chart_div" style ="width: 600px, height: 400px;"></div>
+          <script type= "text/javascript">
             google.charts.load('current', { 'packages': ['corechart'] });
             google.charts.setOnLoadCallback(drawChart);  
             
             
             function drawChart() {
-            var data = google.visualization.arrayToDataTable(
-            ['Task', 'Hours per Day']
-            ['Work', 8]
-            ['Sleep',8]
-            ['Eat',2]
-            ['Study', 4]
-            ['Exercise', 2]
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Work', 8],
+            ['Sleep',8],
+            ['Eat',2],
+            ['Study', 4],
+            ['Exercise', 2],
             ]);
 
             var options = {
