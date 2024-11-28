@@ -193,8 +193,8 @@
           <div id=”chart_div”></div> //copy and paste next bits to produce a basic chart
           <script type=”text/javascript”>
             google.charts.load(‘current’, { ‘packages’: [‘corechart’] });
-            google.charts.setOnLoadCallback(drawChart);   //this will do a "core chart"...call back funnction, make pie chart next...late
-            //...back, now simple pie chart
+            google.charts.setOnLoadCallback(drawChart);  
+            
             
             function drawChart() {
             var data = google.visualization.arrayToDataTable(
@@ -214,13 +214,13 @@
             var chart = new google.visualization.PieChart(document.getElementById(‘chart_div’));
             chart.draw(data, options);
             }
-            </script> //now try to run, see if pie chart works
+            </script> 
             
           </html>
 
 
 
-        //here we have skiped consolodation tasks 1 and 2, on the webpage, some of next bit above...
+       
 
 
 
