@@ -210,31 +210,7 @@ To conclude, this is a brief summary of the mathematical models describing the e
             
             </head>
           
-          <div id="chart_div" style ="width: 600px, height: 400px;"></div>
-          <script type= "text/javascript">
-            google.charts.load('current', { 'packages': ['corechart'] });
-            google.charts.setOnLoadCallback(drawChart);  
-            
-            
-            function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-            ['Task', 'The composition of the cosmos'],
-            ['Work', 8],
-            ['Sleep',8],
-            ['Eat',2],
-            ['Study', 4],
-            ['Exercise', 2],
-            ]);
-
-            var options = {
-            title: 'The composition of the cosmos'
-            };
-
-
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-            chart.draw(data, options);
-            }
-            </script> 
+         
 
 
           <video src="ethanv1-2.mp4" width="800" height="450" controls>
